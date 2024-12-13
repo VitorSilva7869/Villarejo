@@ -1,0 +1,424 @@
+%fontAboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+%fontAlfaSlabOne{
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+%abrilFatfaceRegular{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background: black;
+    @extend %fontAlfaSlabOne;
+    overflow-x: hidden
+}
+//--------Nav---------
+.img-nav{
+    width: 100px;;;
+}
+.nav-estilo{
+    a{
+        color: white;
+        @extend %fontAboreto;
+        @extend %fancy-link;
+    }
+    a:hover{
+        color: rgb(215, 209, 209)
+    }
+}
+//efeito
+%fancy-link { //Efeito 
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover {
+      color: white;
+    transition: all 0.15s ease-out;
+    &:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+  }
+}
+
+  .icone-nav{
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+    float: right;
+    margin-right: 20px;
+    &:hover{
+      color: #8A0C0C;
+    }
+  }
+
+  //------------
+  .container-menu{
+    margin-top: 10px;
+    height: 420px;
+    h2{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    i{
+        font-size: 25px;
+        color: white;
+    }
+    button{
+    background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    }
+    .adcionar{
+        label{
+            font-size: 22px;
+            color: white;
+            margin: 0px 14px;
+        }
+    }
+    .botao{
+        width: 40px;
+    }
+    .col-escolhas{
+        margin-top: 4%;
+    }
+    h4{
+        margin: 0px;
+        color: white;
+    }
+    img{
+        height: 37px;
+        width: 37px;
+        margin-right: 10px;
+    }
+    /* Estilo para os labels dos radio buttons */
+    .radio-label {
+    display: inline-block;
+    padding: 5px 20px;
+    background: linear-gradient(45deg, #211C1C, #221313);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease; /* Suaviza a transição */
+    margin-right: 10px;
+    }
+
+    /* Cor ao passar o mouse */
+    .radio-label:hover {
+        background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    }
+
+    /* Estilo quando o radio button está selecionado */
+    .radio-btn:checked + .radio-label {
+    background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    color: white;
+    }
+  }
+
+  .pizza-borda{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 230px;
+    background: #E0B181;
+    border-radius: 20px;
+    transition: width 0.5s ease, height 0.5s ease;
+    .pizza-queijo{
+        background: #E7933F;
+        width: 140px;
+        height: 200px;
+        align-self: center;
+        border-radius: 10px;
+        transition: width 0.5s ease, height 0.5s ease;
+    }
+    .pizza-recheioBox{
+        display: flex;
+        justify-content: space-around;
+        .pizzaRecheio{
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background: #4E0C0C;
+            transition: width 0.5s ease;
+        }
+    }
+    .recheio-top{
+        margin-bottom: 30%;
+        margin-top: 10%;
+        
+    }
+    .recheio-bottom{
+        margin-top: 30%;
+    }
+  }
+  .cetaBox{
+    margin-top: 53px;
+    margin-right: 5px;
+  }
+  .line{
+    height: 4px;
+    width: 137px;
+    background-color: white;
+    margin: 0px ;
+    border-radius: 10px;
+    transition: width 0.5s ease; /* Suaviza as mudanças de largura */
+  }
+  .line2 {
+    width: 4px;
+    height: 181px;
+    background-color: white;
+    margin: 0px ;
+    padding: 0px;
+    border-radius: 10px;
+    transition: height 0.5s ease; /* Suaviza as mudanças de largura */
+  }
+  .ceta-left{
+    transform: rotate(180deg);
+    font-size: 20px; /* Ajuste o tamanho do símbolo */
+    color: white; /* Define a cor */ 
+  }
+  .ceta-right{
+    font-size: 20px; /* Ajuste o tamanho do símbolo */
+    color: white; /* Define a cor */ 
+  }
+  .ceta-left1{
+    transform: rotate(270deg);
+    font-size: 20px; /* Ajuste o tamanho do símbolo */
+    color: white; /* Define a cor */ 
+}
+.ceta-right1{
+    transform: rotate(90deg);
+    font-size: 20px; /* Ajuste o tamanho do símbolo */
+    color: white; /* Define a cor */ 
+  }
+  
+.radio-btn {
+display: none;
+}
+
+.carrosel-box{
+
+  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  h1{
+    color: white;
+  }
+  label{
+    margin-left: 10px;
+    color: white;
+  }
+  /* Personaliza apenas a borda do rádio */
+  input[type="radio"] {
+      appearance: none; /* Remove o estilo padrão */
+      width: 20px;
+      height: 20px;
+      border: 2px solid gray; /* Cor da borda */
+      border-radius: 50%;
+      outline: none;
+      position: relative;
+      transition: all 0.3s ease-in-out 0s;
+
+  }
+
+  /* Bola interna quando o rádio é selecionado */
+  input[type="radio"]:checked {
+      border-color: #8A0C0C; /* Muda a borda */
+      background-color: #8A0C0C; /* Bola interna */
+  }
+
+  /* Remove a borda padrão ao focar */
+  input[type="radio"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  input[type="radio"]:hover {
+      outline: none;
+      border: 2px solid #8A0C0C; /* Cor da borda */
+  }
+}
+
+//carrosel
+//Carroceu 
+.swiper {
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible !important;
+}
+.margim{
+  margin-top: 100px;
+}
+.swiper-pagination {
+  z-index: 10;
+  bottom: -30px !important;
+}
+.swiper-pagination-bullet{
+  background: #ff0000!important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+
+
+.swiper-slide{
+  background-image: url(../img/background/Design\ sem\ nome\ \(3\).png);
+  width: 100%;
+  height: calc((100% - 30px) / 2) !important;
+  border-radius: 15px;
+  padding: 0px 15px;
+  h5{
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+  h4{
+    color: #FFFFFF;
+    margin-bottom: 2px;
+  }
+  p{
+    color: #a7a5a5;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  img{
+    width: 150px;
+  }
+  .button-1 {
+    display: inline-block;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 4px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button-1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+  }
+  
+  .button-1:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button-1:active{
+    transform: scale(0.9);
+  }
+}
+
+.menu-col{
+  margin-bottom: 10px;
+  margin-top: 30px;
+  nav{
+    margin: 15px 17%;
+    padding: 10px 20px;
+    background: #11111149;
+    border-radius: 25px;
+  }
+  button{
+    background: #323030c1;
+    border-radius: 25px;
+    color: #cbc7c7;
+    border: none;
+    padding: 10px 0px;
+    width: 150px;
+    transition: background-size 1s ease, transform 1s ease, background-position 1s ease;
+    background-size: 0% 100%;
+  }
+  button:hover{
+    background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+    background-size: 100% 100%; /* Gradiente preenche o botão ao passar o mouse */
+  }
+  button:active{
+    background-position: 100% 0;
+    transform: scale(1.2);
+  }
+  .active{
+    background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+  }
+}
+
+//carrosel Extra
+.container-extra{
+  margin-top: 50px;
+  .swiper{
+    height: 280px;
+    margin-top: 20px;
+  }
+  .swiper-slide{
+    height: 100% !important;
+  }
+}
+.icone-extra{
+  color: white;
+  
+  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+
+.container-obs{
+  color: white;
+  margin-top: 50px;
+
+  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  margin-bottom: 20px;
+}

@@ -1,0 +1,464 @@
+%fontAboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+%fontAlfaSlabOne{
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+%abrilFatfaceRegular{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background: black;
+    @extend %fontAlfaSlabOne;
+    overflow-x: hidden
+}
+//--------Nav---------
+.img-nav{
+    width: 100px;;;
+}
+.nav-estilo{
+    a{
+        color: white;
+        @extend %fontAboreto;
+        @extend %fancy-link;
+    }
+    a:hover{
+        color: rgb(215, 209, 209)
+    }
+}
+//efeito
+%fancy-link { //Efeito 
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover {
+      color: white;
+    transition: all 0.15s ease-out;
+    &:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+  }
+}
+
+  .icone-nav{
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+    float: right;
+    margin-right: 20px;
+    &:hover{
+      color: #8A0C0C;
+    }
+  }
+
+  //-----------Home-------------
+.home-col-1{
+  h1{
+    font-size: 75px;
+    color: white;
+    margin-top: 80px;
+  }
+  p{
+    width: 450px;
+    color: rgb(188, 180, 180);
+  }
+
+  /* From Uiverse.io by NorthFishHasNa */ 
+  .button-1 {
+    display: inline-block;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 9px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button-1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+  }
+  
+  .button-1:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button-1:active{
+    transform: scale(0.9);
+  }
+
+
+  .button-2 {
+    display: inline-block;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0px;
+    width: 170px;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 5px;
+    i{
+      margin-left: 6px;
+    }
+    &:hover{
+      background: white;
+      border: none;
+      color: black;
+    }
+  }
+  .button-2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-2 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+  }
+  
+  .button-2:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button-2:active{
+    transform: scale(0.9);
+  }
+  
+}
+
+.menu-col{
+  margin-bottom: 30px;
+  h1{
+    margin-top: 120px;
+    color: #FFFFFF;
+  }
+  nav{
+    margin: 15px 05%;
+    padding: 10px 20px;
+    background: #11111149;
+    border-radius: 25px;
+  }
+  button{
+    background: #323030c1;
+    border-radius: 25px;
+    color: #cbc7c7;
+    border: none;
+    padding: 10px 0px;
+    width: 150px;
+    transition: background-size 1s ease, transform 1s ease, background-position 1s ease;
+    background-size: 0% 100%;
+  }
+  button:hover{
+    background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+    background-size: 100% 100%; /* Gradiente preenche o botão ao passar o mouse */
+  }
+  button:active{
+    background-position: 100% 0;
+    transform: scale(1.2);
+  }
+  .active{
+    background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+  }
+}
+
+//Carroceu 
+.swiper {
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible !important;
+}
+.margim{
+  margin-top: 100px;
+}
+.swiper-pagination {
+  z-index: 10;
+  bottom: -30px !important;
+}
+.swiper-pagination-bullet{
+  background: #ff0000!important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+
+
+.swiper-slide{
+  background-image: url(../img/background/Design\ sem\ nome\ \(3\).png);
+  width: 100%;
+  height: calc((100% - 30px) / 2) !important;
+  border-radius: 15px;
+  padding: 0px 15px;
+  h5{
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+  h4{
+    color: #FFFFFF;
+    margin-bottom: 2px;
+  }
+  p{
+    color: #a7a5a5;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  img{
+    width: 150px;
+  }
+  .button-1 {
+    display: inline-block;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 4px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button-1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+  }
+  
+  .button-1:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button-1:active{
+    transform: scale(0.9);
+  }
+}
+
+//Pq escolher illarejo
+.container-porque{
+  margin-top: 80px;
+  color: #FFFFFF;
+  position: relative;
+  h4{
+    color: #8A0C0C;
+  }
+  h3{
+    font-size: 48px;
+    text-align: center;
+  }
+  h1{
+    font-size: 75px;
+    text-align: center;
+    @extend %abrilFatfaceRegular;
+  }
+  p{
+    font-size: 8px;
+    letter-spacing: 0.7px;
+    color: #a7a5a5;
+  }
+  hr{
+    border: dashed 1px white;
+    margin: 13px 0px;
+  }
+  img{
+    width: 880px;
+    position: absolute;
+    left: -18%;
+    top: -12%;
+  }
+}
+
+//Carrosel Comentarios
+.swiper-comentarios{
+  margin-top: 200px;
+  position: relative;
+  h1{
+    color: #FFFFFF;
+    margin: 20px;
+    @extend %abrilFatfaceRegular;
+  }
+  h2{
+    color: #FFFFFF;
+    margin: 80px 0px 10px 0px;
+    @extend %abrilFatfaceRegular;
+  }
+
+  .logo-carrosel{
+    position: absolute;
+    top: 1%; /* Ajusta para a posição desejada */
+    left: 50%;
+    transform: translate(-50%, -70%); /* Centraliza e ajusta a altura */
+    z-index: 10; /* Garante que o logotipo esteja acima do carrossel */
+    img{
+      width: 200px;
+    }
+  }
+  .slide-comentarios{
+    position: relative;
+  }
+  .imagem-perfil{
+    position: absolute;
+    top: -12px;
+    left: -15px;
+    z-index: 11;
+    img{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-top: 15px;
+    }
+  }
+  p{
+    margin-top: 10px;
+
+  }
+
+  .swiperComentario{
+    margin-top: 112px;
+  }
+  .swiper-slide{
+    transition: all 0.5s ease; /* Animação para suavizar o efeito */
+  }
+  .swiperComentario{
+    /* Slides não ativos */
+    .swiper-slide:not(.swiper-slide-active) {
+      transform: translateY(30px) scale(0.9); /* Afunda e reduz o tamanho */
+      opacity: 0.5; /* Diminui a opacidade */
+    }
+  
+    /* Slide ativo */
+    .swiper-slide-active {
+      transform: translateY(0px) scale(1); /* Destaca o slide ativo */
+      opacity: 1; /* Opacidade total */
+    }
+  }
+  .swiper{
+    height: 400px;
+  }
+}
+.ceta{
+  i{
+    color: #FFFFFF;
+    font-size: 25px;
+  }
+  hr{
+    width: 100%;
+    border: dashed 2px white;
+    margin: 12.5px 0px 12.5px 10px;
+  }
+}
+.estrelas{
+  i{
+    color: #8A0C0C;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+.image-container {
+  position: relative; /* Necessário para posicionar elementos filhos */
+
+}
+
+
+//footer
+.container-footer{
+  color: white;
+  margin-top: 45px;
+  h1{
+    color: #8A0C0C;
+  }
+  a{
+    font-size: 70px;
+    color: white;
+    margin-right: 20px;
+  }
+  p{
+    margin-top: 5px;
+    color: #a7a5a5;
+  }
+  .link-contato{
+    margin-top: 70px;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  iframe{
+      width: 350px;
+      height: 338px;
+      filter: grayscale(100%) invert(95%);
+  }
+}

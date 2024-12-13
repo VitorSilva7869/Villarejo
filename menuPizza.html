@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="expires" content="0">
+    <title>Villarejo</title>
+
+    <link rel="icon" href="img/logo/LogoBranco-removebg-preview.png" type="image/x-icon">
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Kit icones-->
+    <script src="https://kit.fontawesome.com/8e383bc8aa.js" crossorigin="anonymous"></script>
+    <!--Link css-->
+    <link rel="stylesheet" href="css/menuPizza.css">
+    <!--Kit icones-->
+    <script src="https://kit.fontawesome.com/8e383bc8aa.js" crossorigin="anonymous"></script>
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+
+    <!-- Adicione a biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!--MAps Estilisado-->
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-sm">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img class="img-nav" src="img/logo/LogoBranco-removebg-preview.png" alt="Logotipo da empresa Villarejo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="d-none d-sm-block nav-estilo nav-estilo-hover">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Como funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diferenciais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimento</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div style="width: 100px;"><a href="" class="icone-nav"><i class="fa-solid fa-user"></i></a></div>
+                <div class="offcanvas offcanvas-end d-sm-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    oioioioiioioioio
+                </div>
+            </div>
+        </div>
+    </header>
+    <menu class="container container-menu">
+        <div class="row">
+            <div class="col-6">
+                <h1>50R$</h1>
+                <div class="d-flex justify-content-center">
+                    <h4 id="text-top" class="align-self-center me-3 mt-5">30CM</h4>
+                    <div class="d-flex flex-column cetaBox">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <div class="line2 align-self-center"></div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="pizza d-flex justify-content-center">
+                        <div class="d-flex flex-column">
+                            <h4 id="text-left" class="text-center">25CM</h4>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <div class="line align-self-center"></div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                            <div class="pizza-borda">
+                                <div class="pizza-queijo">
+                                    <div class="pizza-recheioBox recheio-top">
+                                        <div class="pizzaRecheio"></div>
+                                        <div class="pizzaRecheio"></div>
+                                    </div>
+                                    <div class="pizza-recheioBox">
+                                        <div class="pizzaRecheio"></div>
+                                        <div class="pizzaRecheio"></div>
+                                    </div>
+                                    <div class="pizza-recheioBox recheio-bottom">
+                                        <div class="pizzaRecheio"></div>
+                                        <div class="pizzaRecheio"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-escolhas">
+                <div class="d-flex ">
+                    <img src="img/icone/centimetro (1).png" alt=""><h2>Centimetro da Pizza</h2>
+                </div>
+
+                <input type="radio" id="30cm" name="optionsCm" class="radio-btn" checked>
+                <label id="expand30Button" for="30cm" class="radio-label">30cm</label>
+              
+                <input type="radio" id="50cm" name="optionsCm" class="radio-btn">
+                <label id="expand50Button" for="50cm" class="radio-label">50cm</label>
+
+                <div class="d-flex mt-4">
+                    <img src="img/icone/desenhar-adicionando-cruz.png" alt=""><h2>Quantidade</h2>
+                </div>
+                <div class="adcionar">
+                    <button class="m-0 botao">+</button><label for="">1</label><button class="botao">-</button>
+                </div>
+                <div class="d-flex mt-4">
+                    <img src="img/icone/rolo-da-massa.png" alt=""><h2>Massa de Pizza</h2>
+                </div>
+                <input type="radio" id="normal" name="optionsMassa" class="radio-btn" checked>
+                <label  for="normal" class="radio-label">Tradicional<i class="fa-solid fa-pizza-slice ms-2"></i></label>
+              
+                <input type="radio" id="integral" name="optionsMassa" class="radio-btn">
+                <label  for="integral" class="radio-label">Integral <i class="fa-solid fa-wheat-awn ms-2"></i></label>
+            </div>
+        </div>
+    </menu>
+    <div class=" container carrosel-box">
+        <div class="d-flex">
+            <img src="img/icone/pizzaMetade.png" alt=""><h1>Sabor</h1><br>
+        </div>
+        <div class="d-flex ms-3">
+            <input type="radio" id="inteira" name="intrira" checked class="">
+            <label  for="inteira" class="me-3">Inteira</label><br>
+            <input type="radio" id="meio" name="intrira" class="">
+            <label  for="meio" class="">Meio-a-Meio</label>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 menu-col">
+                <nav class="d-flex justify-content-between">
+                    <button class="alterarBotao">Salgadas</button>
+                    <button class="alterarBotao">Doce</button>
+                    <button class="alterarBotao">Zero Lactose</button>
+                    <button class="alterarBotao">Zero Glutem</button>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 cardapio-call" style="position: relative;">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h5>45R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Frango</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>40R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/brocolesPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Brocolis</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>42R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/CarneDefumadaPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Carne do Sol</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>48R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/PepperoniPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Peperoni</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>42R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/CarneDefumadaPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Carne do Sol</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>45R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Frango</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>48R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/PepperoniPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Peperoni</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>40R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/brocolesPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Brocolis</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>48R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/PepperoniPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Peperoni</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>40R$</h4>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/brocolesPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Brocolis</h5>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">Slide 8</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container container-extra">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex icone-extra">
+                    <img src="img/icone/observacao.png" alt="">
+                    <h1>Turbinar Sua Pizza</h1>
+                </div>
+                <div class="swiper extraSwipper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h5>15R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Catupiry</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>15R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Catupiry</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>15R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Catupiry</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>15R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Catupiry</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <h5>15R$</h5>
+                            <div class="d-flex justify-content-center my-2">
+                                <img class="" src="img/Pizzas/FrangoPizza-removebg-preview.png" alt="">
+                            </div>
+                            <h4>Catupiry</h4>
+                            <p>Melhor pizza da bahia inteira, exqueça tudo parceiro, venha experimentar pq não existe nenhuma outra iguaal</p>
+                            <button class="button-1"><span>Saborear</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container container-obs">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex mb-2">
+                    <img src="img/icone/foguete-inclinado (1).png" alt="">
+                    <h1>Observação</h1>
+                </div>
+                <div class="">
+                    <textarea class="form-control" id="observação" placeholder="Oq vc quer na sua pizza??" rows="3"></textarea>
+                </div>                  
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="js/homeScript.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/produto.js"></script>

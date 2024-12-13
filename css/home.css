@@ -1,0 +1,437 @@
+@charset "UTF-8";
+.nav-estilo a {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.swiper-comentarios h2, .swiper-comentarios h1, .container-porque h1 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.img-nav {
+  width: 100px;
+}
+
+.nav-estilo a {
+  color: white;
+}
+.nav-estilo a:hover {
+  color: rgb(215, 209, 209);
+}
+
+.nav-estilo a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+}
+.nav-estilo a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-estilo a:hover {
+  color: white;
+  transition: all 0.15s ease-out;
+}
+.nav-estilo a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.icone-nav {
+  font-size: 25px;
+  color: white;
+  transition: all 0.5s;
+  float: right;
+  margin-right: 20px;
+}
+.icone-nav:hover {
+  color: #8A0C0C;
+}
+
+.home-col-1 {
+  /* From Uiverse.io by NorthFishHasNa */
+}
+.home-col-1 h1 {
+  font-size: 75px;
+  color: white;
+  margin-top: 80px;
+}
+.home-col-1 p {
+  width: 450px;
+  color: rgb(188, 180, 180);
+}
+.home-col-1 .button-1 {
+  display: inline-block;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 9px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.home-col-1 .button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.home-col-1 .button-1 span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+.home-col-1 .button-1:hover span {
+  padding-right: 15px;
+}
+.home-col-1 .button-1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home-col-1 .button-1:active {
+  transform: scale(0.9);
+}
+.home-col-1 .button-2 {
+  display: inline-block;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid white;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 8px 0px;
+  width: 170px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 5px;
+}
+.home-col-1 .button-2 i {
+  margin-left: 6px;
+}
+.home-col-1 .button-2:hover {
+  background: white;
+  border: none;
+  color: black;
+}
+.home-col-1 .button-2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.home-col-1 .button-2 span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+.home-col-1 .button-2:hover span {
+  padding-right: 15px;
+}
+.home-col-1 .button-2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home-col-1 .button-2:active {
+  transform: scale(0.9);
+}
+
+.menu-col {
+  margin-bottom: 30px;
+}
+.menu-col h1 {
+  margin-top: 120px;
+  color: #FFFFFF;
+}
+.menu-col nav {
+  margin: 15px 5%;
+  padding: 10px 20px;
+  background: rgba(17, 17, 17, 0.2862745098);
+  border-radius: 25px;
+}
+.menu-col button {
+  background: rgba(50, 48, 48, 0.7568627451);
+  border-radius: 25px;
+  color: #cbc7c7;
+  border: none;
+  padding: 10px 0px;
+  width: 150px;
+  transition: background-size 1s ease, transform 1s ease, background-position 1s ease;
+  background-size: 0% 100%;
+}
+.menu-col button:hover {
+  background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+  background-size: 100% 100%; /* Gradiente preenche o botão ao passar o mouse */
+}
+.menu-col button:active {
+  background-position: 100% 0;
+  transform: scale(1.2);
+}
+.menu-col .active {
+  background: linear-gradient(90deg, #8A0C0C, #4E0C0C);
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible !important;
+}
+
+.margim {
+  margin-top: 100px;
+}
+
+.swiper-pagination {
+  z-index: 10;
+  bottom: -30px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #ff0000 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-slide {
+  background-image: url(../img/background/Design\ sem\ nome\ \(3\).png);
+  width: 100%;
+  height: calc((100% - 30px) / 2) !important;
+  border-radius: 15px;
+  padding: 0px 15px;
+}
+.swiper-slide h5 {
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+.swiper-slide h4 {
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+.swiper-slide p {
+  color: #a7a5a5;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.swiper-slide img {
+  width: 150px;
+}
+.swiper-slide .button-1 {
+  display: inline-block;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 4px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.swiper-slide .button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.swiper-slide .button-1 span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+.swiper-slide .button-1:hover span {
+  padding-right: 15px;
+}
+.swiper-slide .button-1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.swiper-slide .button-1:active {
+  transform: scale(0.9);
+}
+
+.container-porque {
+  margin-top: 80px;
+  color: #FFFFFF;
+  position: relative;
+}
+.container-porque h4 {
+  color: #8A0C0C;
+}
+.container-porque h3 {
+  font-size: 48px;
+  text-align: center;
+}
+.container-porque h1 {
+  font-size: 75px;
+  text-align: center;
+}
+.container-porque p {
+  font-size: 8px;
+  letter-spacing: 0.7px;
+  color: #a7a5a5;
+}
+.container-porque hr {
+  border: dashed 1px white;
+  margin: 13px 0px;
+}
+.container-porque img {
+  width: 880px;
+  position: absolute;
+  left: -18%;
+  top: -12%;
+}
+
+.swiper-comentarios {
+  margin-top: 200px;
+  position: relative;
+}
+.swiper-comentarios h1 {
+  color: #FFFFFF;
+  margin: 20px;
+}
+.swiper-comentarios h2 {
+  color: #FFFFFF;
+  margin: 80px 0px 10px 0px;
+}
+.swiper-comentarios .logo-carrosel {
+  position: absolute;
+  top: 1%; /* Ajusta para a posição desejada */
+  left: 50%;
+  transform: translate(-50%, -70%); /* Centraliza e ajusta a altura */
+  z-index: 10; /* Garante que o logotipo esteja acima do carrossel */
+}
+.swiper-comentarios .logo-carrosel img {
+  width: 200px;
+}
+.swiper-comentarios .slide-comentarios {
+  position: relative;
+}
+.swiper-comentarios .imagem-perfil {
+  position: absolute;
+  top: -12px;
+  left: -15px;
+  z-index: 11;
+}
+.swiper-comentarios .imagem-perfil img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.swiper-comentarios p {
+  margin-top: 10px;
+}
+.swiper-comentarios .swiperComentario {
+  margin-top: 112px;
+}
+.swiper-comentarios .swiper-slide {
+  transition: all 0.5s ease; /* Animação para suavizar o efeito */
+}
+.swiper-comentarios .swiperComentario {
+  /* Slides não ativos */
+  /* Slide ativo */
+}
+.swiper-comentarios .swiperComentario .swiper-slide:not(.swiper-slide-active) {
+  transform: translateY(30px) scale(0.9); /* Afunda e reduz o tamanho */
+  opacity: 0.5; /* Diminui a opacidade */
+}
+.swiper-comentarios .swiperComentario .swiper-slide-active {
+  transform: translateY(0px) scale(1); /* Destaca o slide ativo */
+  opacity: 1; /* Opacidade total */
+}
+.swiper-comentarios .swiper {
+  height: 400px;
+}
+
+.ceta i {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.ceta hr {
+  width: 100%;
+  border: dashed 2px white;
+  margin: 12.5px 0px 12.5px 10px;
+}
+
+.estrelas i {
+  color: #8A0C0C;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.image-container {
+  position: relative; /* Necessário para posicionar elementos filhos */
+}
+
+.container-footer {
+  color: white;
+  margin-top: 45px;
+}
+.container-footer h1 {
+  color: #8A0C0C;
+}
+.container-footer a {
+  font-size: 70px;
+  color: white;
+  margin-right: 20px;
+}
+.container-footer p {
+  margin-top: 5px;
+  color: #a7a5a5;
+}
+.container-footer .link-contato {
+  margin-top: 70px;
+}
+
+.overlay {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.overlay iframe {
+  width: 350px;
+  height: 338px;
+  filter: grayscale(100%) invert(95%);
+}
+
+/*# sourceMappingURL=home.css.map */

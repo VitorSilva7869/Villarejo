@@ -1,0 +1,346 @@
+@charset "UTF-8";
+.nav-estilo a {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.img-nav {
+  width: 100px;
+}
+
+.nav-estilo a {
+  color: white;
+}
+.nav-estilo a:hover {
+  color: rgb(215, 209, 209);
+}
+
+.nav-estilo a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+}
+.nav-estilo a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-estilo a:hover {
+  color: white;
+  transition: all 0.15s ease-out;
+}
+.nav-estilo a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.icone-nav {
+  font-size: 25px;
+  color: white;
+  transition: all 0.5s;
+  float: right;
+  margin-right: 20px;
+}
+.icone-nav:hover {
+  color: #8A0C0C;
+}
+
+.container-pedidos .linha {
+  width: 100%;
+  height: 2px;
+  background: #635E5E;
+}
+
+.col-pizza-cesta {
+  background: rgba(0, 0, 0, 0.491);
+  border-radius: 25px;
+  border: 2px solid #635E5E;
+  height: 400px;
+}
+.col-pizza-cesta h1 {
+  color: white;
+  margin: 10px 0px;
+  font-size: 25px;
+}
+.col-pizza-cesta h2 {
+  color: white;
+  margin: 0px;
+  font-size: 25px;
+}
+.col-pizza-cesta i {
+  color: white;
+  margin-left: 10px;
+}
+.col-pizza-cesta span {
+  color: #dcd5d5;
+  margin-left: 8px;
+}
+.col-pizza-cesta img {
+  width: 80px;
+  height: 63px;
+}
+.col-pizza-cesta p {
+  color: white;
+  font-size: 14px;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+.col-pizza-cesta .box-pizza {
+  margin: 10px 24px 10px 24px;
+}
+.col-pizza-cesta .box-especifico {
+  margin-left: 10px;
+}
+.col-pizza-cesta .box-especifico button {
+  background: none;
+  border: none;
+  color: #8A0C0C;
+  padding: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.col-pizza-cesta .box-especifico i {
+  transition: all 0.3s ease-in-out 0s;
+  color: #8A0C0C;
+}
+.col-pizza-cesta .box-especifico button:hover i {
+  color: #600a0a;
+}
+.col-pizza-cesta .box-especifico button:hover {
+  color: #600a0a;
+}
+.col-pizza-cesta .button-pizza {
+  font-size: 14px;
+}
+
+.col-pedido-finalizar {
+  background: rgba(0, 0, 0, 0.491);
+  border-radius: 25px;
+  border: 2px solid #635E5E;
+  height: 400px;
+  position: relative;
+  /* Estilo para os labels dos radio buttons */
+  /* Cor ao passar o mouse */
+  /* Estilo quando o radio button está selecionado */
+}
+.col-pedido-finalizar .top-finalizar {
+  padding: 6.5px 25px;
+}
+.col-pedido-finalizar .box-pedido {
+  padding: 15px;
+}
+.col-pedido-finalizar p {
+  color: white;
+  margin: 0px;
+  font-size: 12px;
+}
+.col-pedido-finalizar h1 {
+  color: white;
+  margin: 0px;
+}
+.col-pedido-finalizar h2 {
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+}
+.col-pedido-finalizar h3 {
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.col-pedido-finalizar i {
+  color: white;
+  margin-left: 2px;
+}
+.col-pedido-finalizar span {
+  color: #dcd5d5;
+  margin-left: 7px;
+}
+.col-pedido-finalizar .frete-detalhe {
+  margin-top: 100%;
+}
+.col-pedido-finalizar .localizacao p {
+  font-size: 10px;
+  color: #dcd5d5;
+}
+.col-pedido-finalizar .localizacao i {
+  color: #E7933F;
+  margin-right: 5px;
+}
+.col-pedido-finalizar .pedido-bottom1 {
+  position: absolute;
+  bottom: 12%;
+  width: 91%;
+}
+.col-pedido-finalizar .pedido-bottom2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.col-pedido-finalizar .pedido-total {
+  margin: 5px 15px 5px 15px;
+}
+.col-pedido-finalizar .radio-label {
+  display: inline-block;
+  padding: 5px 20px;
+  background: linear-gradient(45deg, #211C1C, #221313);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s ease; /* Suaviza a transição */
+}
+.col-pedido-finalizar .radio-label:hover {
+  background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+}
+.col-pedido-finalizar .radio-btn:checked + .radio-label {
+  background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+  color: white;
+}
+.col-pedido-finalizar input[type=radio] {
+  display: none;
+}
+
+.button-1 {
+  display: inline-block;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #8A0C0C, #4E0C0C);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 9px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-1 span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button-1:hover span {
+  padding-right: 15px;
+}
+
+.button-1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-1:active {
+  transform: scale(0.9);
+}
+
+.modal-content {
+  background: rgb(5, 5, 5);
+  border: 1px solid #dcd5d5;
+}
+
+.modal-pizza {
+  height: 290px;
+  overflow-y: auto; /* Habilita a barra de rolagem vertical */
+  /* Estilo do trilho da barra de rolagem */
+}
+.modal-pizza h1 {
+  color: white;
+  margin: 10px 0;
+  font-size: 25px;
+}
+.modal-pizza h2 {
+  color: white;
+  margin: 0;
+  font-size: 25px;
+}
+.modal-pizza i {
+  color: white;
+  margin-left: 10px;
+}
+.modal-pizza span {
+  color: #dcd5d5;
+  margin-left: 8px;
+}
+.modal-pizza img {
+  width: 80px;
+  height: 63px;
+}
+.modal-pizza p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.modal-pizza .box-especifico {
+  margin-left: 10px;
+}
+.modal-pizza::-webkit-scrollbar {
+  padding-right: 5px;
+  width: 8px; /* Largura da barra */
+}
+.modal-pizza::-webkit-scrollbar-track {
+  background: black; /* Cor do trilho */
+}
+.modal-pizza::-webkit-scrollbar-thumb {
+  background: #8A0C0C; /* Cor do polegar */
+  border-radius: 3px; /* Bordas arredondadas */
+}
+.modal-pizza::-webkit-scrollbar-thumb:hover {
+  background: #4E0C0C; /* Cor ao passar o mouse */
+}
+
+.localizacao-modal {
+  height: 100px;
+}
+.localizacao-modal h4 {
+  color: white;
+}
+.localizacao-modal p {
+  font-size: 15px;
+  color: #dcd5d5;
+  margin: 0px;
+}
+.localizacao-modal i {
+  color: #E7933F;
+  margin-right: 5px;
+}
+
+.modal-footer {
+  align-items: none !important;
+  justify-content: none !important;
+}
+.modal-footer div {
+  width: 100%;
+}
+
+/*# sourceMappingURL=pedidos.css.map */
